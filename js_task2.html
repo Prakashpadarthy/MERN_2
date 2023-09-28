@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function arrange(){
+            var a=document.getElementById("string").value;
+            document.getElementById('result').textContent= a.split('').sort().join('');
+        }
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <center> 
+        <h3 class="text-success">String in alphabetical order</h3><br>
+       <label><h4>Enter String:</h4></label>
+       <input type="text" class="number" id="string">
+       
+       <button onclick=arrange()>Submit</button><br><br>
+       <h4>Result</h2>
+        <span id="result"></span>
+    </center>
+</body>
+</html>

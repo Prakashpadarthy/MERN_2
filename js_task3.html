@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            margin:auto;
+            width: 300px;
+            height: 200px;
+            padding-top: 3%;
+        }
+    </style>
+    <script>
+        function multiply() {
+            let firstNumVal = parseInt(document.getElementById("num1").value);
+            let secondNumVal = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "The Result Is:" + firstNumVal * secondNumVal;
+
+
+
+
+
+        }
+
+        function divide() {
+            let firstNumVal = parseInt(document.getElementById("num1").value);
+            let secondNumVal = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "The Result Is: " + firstNumVal / secondNumVal;
+
+
+        }
+ 
+    </script>
+</head>
+<body><center>
+    <div class="container">
+        <label for="num1">1st Number :</label>
+        <input type="text" name="num1" id="num1"><br>
+        <label for="num2">2nd Number :</label>
+        <input type="text" name="num2" id="num2"><br><br>
+        <button onclick=multiply()>Multiply</button>
+        <button onclick=divide()>Divide</button><br><br>
+        <p id="result"></p>
+    </div>
+    </center>
+</body>
+</html>
